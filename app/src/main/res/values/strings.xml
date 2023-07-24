@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">Pokedex</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="login_image">Login-image</string>
+    <string name="info_dex">Info-Dex</string>
+    <string name="atrapalos_a_todos">Atrapalos a Todos</string>
+    <string name="google_image">google-image</string>
+    <string name="login_wit_google">login wit Google</string>
+    <string name="placeholder">placeholder</string>
+    <string name="name_placeholder">name</string>
+    <string name="id">id</string>
+    <string name="tipo">Tipo</string>
+    <string name="altura">altura</string>
+    <string name="peso">peso</string>
+    <string name="sexo">sexo</string>
+    <string name="habilidad">habilidad</string>
+    <string name="pokemon_view">pokemon image</string>
+    <string name="descripcion">Descripcion</string>
+    <string name="infoplaceholder">infoPlaceholder</string>
+    <string name="evolutionview">evolutionView</string>
+    <string name="pokemonName">Name Placeholder\n</string>
+    <string name="pokemon_level">level\n</string>
+    <string name="ubicacion">Ubicacion:</string>
+</resources>

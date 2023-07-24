@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/loginFragment">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.pokedex.ui.home.HomeFragment"
+        android:label="@string/info_dex"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_nav_home_to_Pokemon_list"
+            app:destination="@id/Pokemon_list" />
+        <action
+            android:id="@+id/action_nav_home_to_nav_slideshow"
+            app:destination="@id/nav_slideshow" />
+        <action
+            android:id="@+id/action_nav_home_to_item_list"
+            app:destination="@id/item_list" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/Pokemon_list"
+        android:name="com.example.pokedex.ui.gallery.GalleryFragment"
+        android:label="@string/info_dex"
+        tools:layout="@layout/fragment_gallery" >
+        <action
+            android:id="@+id/action_Pokemon_list_to_pokemonViewFragment"
+            app:destination="@id/pokemonViewFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/item_list"
+        android:name="com.example.pokedex.ui.slideshow.SlideshowFragment"
+        android:label="@string/info_dex"
+        tools:layout="@layout/fragment_slideshow" >
+        <action
+            android:id="@+id/action_item_list_to_itenViewFragment"
+            app:destination="@id/itenViewFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.pokedex.LoginFragment"
+        android:label="@string/info_dex"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_nav_home"
+            app:destination="@id/nav_home" />
+    </fragment>
+    <fragment
+        android:id="@+id/pokemonViewFragment"
+        android:name="com.example.pokedex.PokemonViewFragment"
+        android:label="fragment_pokemon_view"
+        tools:layout="@layout/fragment_pokemon_view" >
+        <action
+            android:id="@+id/action_pokemonViewFragment_to_pokemonInfoFragment2"
+            app:destination="@id/pokemonInfoFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/itenViewFragment"
+        android:name="com.example.pokedex.ItenViewFragment"
+        android:label="fragment_iten_view"
+        tools:layout="@layout/fragment_iten_view" />
+    <fragment
+        android:id="@+id/pokemonInfoFragment2"
+        android:name="com.example.pokedex.PokemonInfoFragment"
+        android:label="fragment_pokemon_info"
+        tools:layout="@layout/fragment_pokemon_info" />
+</navigation>
