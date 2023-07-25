@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@id/loginFragment">
+    app:startDestination="@id/Pokemon_list">
 
     <fragment
         android:id="@+id/nav_home"
@@ -23,9 +23,9 @@
 
     <fragment
         android:id="@+id/Pokemon_list"
-        android:name="com.example.pokedex.ui.gallery.GalleryFragment"
+        android:name="com.example.pokedex.ui.pokemonlist.PokemonList"
         android:label="@string/info_dex"
-        tools:layout="@layout/fragment_gallery" >
+        tools:layout="@layout/fragment_pokemon_list" >
         <action
             android:id="@+id/action_Pokemon_list_to_pokemonViewFragment"
             app:destination="@id/pokemonViewFragment" />

@@ -39,7 +39,7 @@
                 tools:ignore="VisualLintBounds" />
 
             <TextView
-                android:id="@+id/PokemonNameID"
+                android:id="@+id/ItemNameID"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="4dp"
@@ -57,7 +57,7 @@
                 android:layout_marginStart="44dp"
                 android:layout_marginTop="4dp"
                 android:text="@string/id"
-                app:layout_constraintStart_toEndOf="@+id/PokemonNameID"
+                app:layout_constraintStart_toEndOf="@+id/ItemNameID"
                 app:layout_constraintTop_toTopOf="parent"
                 tools:ignore="TextSizeCheck,TextContrastCheck"
                 android:textColor="#FAFAFA"/>
@@ -72,7 +72,7 @@
                 android:textColor="#FAFAFA"
                 android:textSize="10sp"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/PokemonNameID"
+                app:layout_constraintTop_toBottomOf="@+id/ItemNameID"
                 tools:ignore="SmallSp,TextSizeCheck" />
 
             <TextView
@@ -84,7 +84,7 @@
                 android:text="@string/placeholder"
                 android:textSize="10sp"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/PokemonNameID"
+                app:layout_constraintTop_toBottomOf="@+id/ItemNameID"
                 tools:ignore="SmallSp,TextContrastCheck,TextSizeCheck"
                 android:textColor="#FAFAFA"/>
 
@@ -134,19 +134,6 @@
                 tools:ignore="TextContrastCheck"
                 android:textColor="#FAFAFA" />
 
-            <ImageView
-                android:id="@+id/imageView4"
-                android:layout_width="98dp"
-                android:layout_height="105dp"
-                android:layout_marginStart="184dp"
-                android:layout_marginTop="48dp"
-                android:contentDescription="@string/pokemon_view"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                tools:ignore="ImageContrastCheck"
-                android:src="@tools:sample/avatars"
-                android:textColor="#FAFAFA"/>
-
             <TextView
                 android:id="@+id/alturaID"
                 android:layout_width="wrap_content"
@@ -159,7 +146,7 @@
                 android:textColor="#FAFAFA"/>
 
             <TextView
-                android:id="@+id/pesoID"
+                android:id="@+id/descripcionItemID"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
@@ -190,6 +177,18 @@
                 app:layout_constraintTop_toTopOf="@+id/textView12"
                 tools:ignore="TextContrastCheck"
                 android:textColor="#FAFAFA"/>
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="98dp"
+                android:layout_height="103dp"
+                android:layout_marginTop="52dp"
+                android:layout_marginEnd="16dp"
+                android:contentDescription="@string/pokemon_view"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/view"
+                tools:ignore="ImageContrastCheck"
+                tools:src="@tools:sample/avatars" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -224,7 +223,7 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
-                android:id="@+id/infoPlaceholderID"
+                android:id="@+id/CombatPlaceholderID"
                 android:layout_width="308dp"
                 android:layout_height="57dp"
                 android:layout_marginStart="8dp"

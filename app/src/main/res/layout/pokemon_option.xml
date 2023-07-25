@@ -4,16 +4,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/app_optionID"
     android:layout_width="match_parent"
-    android:layout_height="180dp"
-    android:elevation="20dp"
-    android:paddingTop="4dp"
-    android:paddingBottom="4dp">
+    android:layout_height="100dp"
+    android:background="#FFFFFF"
+    android:elevation="20dp">
 
     <androidx.cardview.widget.CardView
         android:id="@+id/app_option_id"
-        android:layout_width="322dp"
-        android:layout_height="69dp"
+        android:layout_width="321dp"
+        android:layout_height="61dp"
         android:layout_marginStart="45dp"
+        android:layout_marginEnd="45dp"
         app:cardBackgroundColor="#CE2B21"
         app:cardCornerRadius="50dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -27,11 +27,11 @@
 
             <View
                 android:id="@+id/view"
-                android:layout_width="131dp"
-                android:layout_height="70dp"
-                android:layout_marginStart="12dp"
+                android:layout_width="117dp"
+                android:layout_height="62dp"
+                android:layout_marginStart="208dp"
                 android:background="@drawable/photo_place_holder"
-                app:layout_constraintStart_toEndOf="@+id/titleOptionID"
+                app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 tools:ignore="VisualLintBounds" />
 
@@ -51,14 +51,38 @@
                 android:id="@+id/titleOptionID"
                 android:layout_width="126dp"
                 android:layout_height="24dp"
-                android:layout_marginStart="56dp"
-                android:layout_marginTop="16dp"
+                android:layout_marginStart="44dp"
+                android:layout_marginTop="8dp"
                 android:text="@string/placeholder"
                 android:textColor="#FFFFFF"
                 android:textSize="20sp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 tools:ignore="TextSizeCheck,TextContrastCheck" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="36dp"
+                android:layout_marginTop="4dp"
+                android:text="@string/tipo"
+                android:textColor="#FFFFFF"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/titleOptionID"
+                tools:ignore="TextContrastCheck" />
+
+            <TextView
+                android:id="@+id/TypePokemonID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="14dp"
+                android:layout_marginTop="4dp"
+                android:text="@string/infoplaceholder"
+                android:textColor="#FFFFFF"
+                app:layout_constraintStart_toEndOf="@+id/textView6"
+                app:layout_constraintTop_toBottomOf="@+id/titleOptionID"
+                tools:ignore="TextContrastCheck" />
         </androidx.constraintlayout.widget.ConstraintLayout>
 
 
